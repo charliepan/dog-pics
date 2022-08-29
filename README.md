@@ -1,5 +1,8 @@
 ## Documentation 📃:
-First, install all package dependencies:
+
+Clone this repo using the green Code button (choose an option HTTPS, Github Cli, Github Desktop, etc.)
+
+Install all package dependencies:
 
 ```bash
 npm i
