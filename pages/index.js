@@ -52,9 +52,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1 className="text-center py-2">Doggo of the day:</h1>
-      <div className="flex items-center justify-center py-4">
+      <div className="flex items-center justify-center py-2">
         <img
-          className="rounded-md object-contain aspect-video sm:aspect-square"
+          className="rounded-md"
           src={`${dogs && dogs[0]}`}
           alt="featured-dog"
         />
