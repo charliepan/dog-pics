@@ -7,3 +7,6 @@ npm run dev
 # or
 yarn dev
 ```
+
+## About:
+Icons used in project were from [Twemoji](https://twemoji.twitter.com/)
