@@ -55,14 +55,14 @@ export default function Home() {
       <h1 className="text-center py-2">Doggo of the day:</h1>
       <div className="block container mx-auto w-64 h-64">
         <Image
-          className="rounded-md py-2 "
+          className="rounded-md py-2 object-cover"
           src={`${(dogs && dogs[0]) || "/"}`}
           alt="featured-dog"
           width={250}
           height={250}
           layout="responsive"
           placeholder="blur"
-          blurDataURL={`${(dogs && dogs[0]) || "/"}`}
+          blurDataURL={`${dogs && dogs[0]}`}
           loading="eager"
           priority
         />
