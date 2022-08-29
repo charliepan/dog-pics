@@ -21,5 +21,4 @@ Also I hosted it on vercel so if you want to just see it go [here](https://dog-p
 
 ## About:
 Icon used in project were from [Twemoji](https://twemoji.twitter.com/)
-
 This project uses [Next.js](https://nextjs.org/) and [tailwindcss](https://tailwindcss.com/)
