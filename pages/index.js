@@ -61,6 +61,9 @@ export default function Home() {
           width={250}
           height={250}
           layout="responsive"
+          placeholder="blur"
+          blurDataURL={`${(dogs && dogs[0]) || "/"}`}
+          priority
         />
       </div>
       {otherDogs &&
