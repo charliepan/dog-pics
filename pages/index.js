@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -52,11 +53,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1 className="text-center py-2">Doggo of the day:</h1>
-      <div className="flex items-center justify-center py-2">
-        <img
-          className="rounded-md"
-          src={`${dogs && dogs[0]}`}
+      <div className="block container mx-auto w-64 h-64">
+        <Image
+          className="rounded-md py-2 "
+          src={`${(dogs && dogs[0]) || "/"}`}
           alt="featured-dog"
+          width={250}
+          height={250}
+          layout="responsive"
         />
       </div>
       {otherDogs &&
@@ -66,7 +70,12 @@ export default function Home() {
               key={dog.url}
               className="flex items-center justify-center py-2"
             >
-              <a className="hover:text-teal-500" href={dog.url} target="_blank">
+              <a
+                className="hover:text-teal-500"
+                href={dog.url}
+                target="_blank"
+                rel="noreferrer"
+              >
                 {dog.breed}
               </a>
             </div>
